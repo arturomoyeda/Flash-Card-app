@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project1_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GTv-m8-2gL">
+                                <rect key="frame" x="16" y="28" width="343" height="631"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hh-pG-Yis">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Copy of c_cave-of-wonders" translatesAutoresizingMaskIntoConstraints="NO" id="YZe-ac-0Zx">
+                                        <rect key="frame" x="0.0" y="21" width="343" height="284"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SHr-1W-IKQ">
+                                        <rect key="frame" x="0.0" y="305" width="343" height="266"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Welcome to the cave of wonders. you two buttoms of your choice. One states "Go into the cave". the toher one ssays "Do not go into the cave and do nothing. Which path shall be make your choice</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3r-4R-y64" colorLabel="IBBuiltInLabel-Blue">
+                                        <rect key="frame" x="0.0" y="571" width="343" height="30"/>
+                                        <color key="backgroundColor" red="0.20621643629641029" green="1" blue="0.21707415539537445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Go into the cave"/>
+                                        <connections>
+                                            <segue destination="h96-ci-GwG" kind="show" id="8KJ-yZ-Jcy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfA-tW-hy1">
+                                        <rect key="frame" x="0.0" y="601" width="343" height="30"/>
+                                        <color key="backgroundColor" red="0.27420068418176713" green="0.93025204738152534" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Do not go into then cave and do nothing"/>
+                                        <connections>
+                                            <segue destination="lAo-jU-JUL" kind="show" id="atD-Rc-SJb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GTv-m8-2gL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="I0y-iG-3ZC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GTv-m8-2gL" secondAttribute="bottom" constant="8" symbolic="YES" id="PII-au-1Dz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GTv-m8-2gL" secondAttribute="trailing" id="jE8-FI-riS"/>
+                            <constraint firstItem="GTv-m8-2gL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="lZV-D8-hl7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="-66"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Uw9-QY-Alc">
+            <objects>
+                <viewController id="h96-ci-GwG" customClass="ViewController" customModule="Project1_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fwy-VX-fm2"/>
+                        <viewControllerLayoutGuide type="bottom" id="KXC-7t-gFg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tui-kk-WgB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hnu-ef-whF">
+                                <rect key="frame" x="16" y="28" width="343" height="631"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Copy of c_cave-of-wonders" translatesAutoresizingMaskIntoConstraints="NO" id="ibB-wv-nuq">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="284"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fhm-dR-u3O">
+                                        <rect key="frame" x="0.0" y="284" width="343" height="287"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">If you click the green bottom, you happen yo be inside the cave althought the image does not help. You have two choices, answer the qustion of the cave of wonders. Or leave as a coward</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8c-xu-AwC" colorLabel="IBBuiltInLabel-Blue">
+                                        <rect key="frame" x="0.0" y="571" width="343" height="30"/>
+                                        <color key="backgroundColor" red="0.2062164363" green="1" blue="0.2170741554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Answer the question"/>
+                                        <connections>
+                                            <segue destination="s2O-CZ-wc3" kind="show" id="H3F-Zi-iHn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxT-8v-RYW">
+                                        <rect key="frame" x="0.0" y="601" width="343" height="30"/>
+                                        <color key="backgroundColor" red="0.27420068419999999" green="0.9302520474" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="leave as coward"/>
+                                        <connections>
+                                            <segue destination="lAo-jU-JUL" kind="show" id="5kR-PJ-mBK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" fixedFrame="YES" text="Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NY3-ZT-meC">
+                                <rect key="frame" x="10" y="10" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KXC-7t-gFg" firstAttribute="top" secondItem="Hnu-ef-whF" secondAttribute="bottom" constant="8" symbolic="YES" id="2ZI-Hc-TSn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hnu-ef-whF" secondAttribute="trailing" id="Ij0-fM-Kx8"/>
+                            <constraint firstItem="Hnu-ef-whF" firstAttribute="leading" secondItem="tui-kk-WgB" secondAttribute="leadingMargin" id="UUu-oM-Woi"/>
+                            <constraint firstItem="Hnu-ef-whF" firstAttribute="top" secondItem="fwy-VX-fm2" secondAttribute="bottom" constant="8" symbolic="YES" id="xl1-SG-bmY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZS-AH-fYb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="-81"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rDm-cw-W4P">
+            <objects>
+                <viewController id="lAo-jU-JUL" customClass="ViewController" customModule="Project1_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kQv-Iu-Wdl"/>
+                        <viewControllerLayoutGuide type="bottom" id="dR8-T4-46a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hIh-VG-9rB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tdc-bW-lQ5">
+                                <rect key="frame" x="16" y="28" width="343" height="631"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26k-5P-MNe">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Copy of c_cave-of-wonders" translatesAutoresizingMaskIntoConstraints="NO" id="6Sc-JT-cSK">
+                                        <rect key="frame" x="0.0" y="21" width="343" height="284"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" text="You Coward!!!!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Qn-Z2-Wsv">
+                                        <rect key="frame" x="0.0" y="305" width="343" height="296"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZ1-Pp-Koo">
+                                        <rect key="frame" x="0.0" y="601" width="343" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.58076222366332897" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Restart"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dR8-T4-46a" firstAttribute="top" secondItem="tdc-bW-lQ5" secondAttribute="bottom" constant="8" symbolic="YES" id="2z6-Hd-g1p"/>
+                            <constraint firstItem="tdc-bW-lQ5" firstAttribute="top" secondItem="kQv-Iu-Wdl" secondAttribute="bottom" constant="8" symbolic="YES" id="Pqv-jv-3A3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tdc-bW-lQ5" secondAttribute="trailing" id="Y7z-zR-dVt"/>
+                            <constraint firstItem="tdc-bW-lQ5" firstAttribute="leading" secondItem="hIh-VG-9rB" secondAttribute="leadingMargin" id="mDp-p0-hkn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oal-5Z-zuj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="-731"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UHi-Gk-my9">
+            <objects>
+                <viewController id="s2O-CZ-wc3" customClass="ViewController" customModule="Project1_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vcJ-ts-Jgx"/>
+                        <viewControllerLayoutGuide type="bottom" id="MI8-1z-zKU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4iS-6Z-jCj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="A1D-SN-nWn">
+                                <rect key="frame" x="16" y="28" width="343" height="631"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Copy of c_cave-of-wonders" translatesAutoresizingMaskIntoConstraints="NO" id="uj1-PT-Q8M">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="284"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" text="The Question is simple. What is the capital of Colombia?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5kv-4S-EjY">
+                                        <rect key="frame" x="0.0" y="284" width="343" height="257"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4D-7R-aK2">
+                                        <rect key="frame" x="0.0" y="541" width="343" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.18367137059999999" blue="0.14985671079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Medellin"/>
+                                        <connections>
+                                            <segue destination="6HH-mp-0G3" kind="show" id="BVv-Sn-EZw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRp-dC-u8v" colorLabel="IBBuiltInLabel-Blue">
+                                        <rect key="frame" x="0.0" y="571" width="343" height="30"/>
+                                        <color key="backgroundColor" red="0.2062164363" green="1" blue="0.2170741554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Bogota"/>
+                                        <connections>
+                                            <segue destination="EJ9-6O-28f" kind="show" id="PKd-Ip-o96"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGs-OW-3vJ">
+                                        <rect key="frame" x="0.0" y="601" width="343" height="30"/>
+                                        <color key="backgroundColor" red="0.27420068419999999" green="0.9302520474" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Asturias"/>
+                                        <connections>
+                                            <segue destination="6HH-mp-0G3" kind="show" id="T0Z-Vp-7XF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" fixedFrame="YES" text="Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw6-D4-F3G">
+                                <rect key="frame" x="10" y="10" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A1D-SN-nWn" firstAttribute="leading" secondItem="4iS-6Z-jCj" secondAttribute="leadingMargin" id="RDq-CP-Nsl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A1D-SN-nWn" secondAttribute="trailing" id="Wm3-BQ-OfL"/>
+                            <constraint firstItem="A1D-SN-nWn" firstAttribute="top" secondItem="vcJ-ts-Jgx" secondAttribute="bottom" constant="8" symbolic="YES" id="d3v-di-mSN"/>
+                            <constraint firstItem="MI8-1z-zKU" firstAttribute="top" secondItem="A1D-SN-nWn" secondAttribute="bottom" constant="8" symbolic="YES" id="tfx-0k-3HI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uw0-Lk-Dbt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153" y="-81"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HTv-ac-jUS">
+            <objects>
+                <viewController id="6HH-mp-0G3" customClass="ViewController" customModule="Project1_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hhZ-Zx-D8a"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cyg-AR-QMK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wp7-7G-14w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-tq-LJ4">
+                                <rect key="frame" x="16" y="28" width="343" height="631"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Copy of c_cave-of-wonders" translatesAutoresizingMaskIntoConstraints="NO" id="JvJ-n8-b0h">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="284"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" text="You failed" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ayf-yH-RcF">
+                                        <rect key="frame" x="0.0" y="284" width="343" height="317"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMv-G1-PmN">
+                                        <rect key="frame" x="0.0" y="601" width="343" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.0063415094305895314" blue="0.97481643399878626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Try Again"/>
+                                        <connections>
+                                            <segue destination="s2O-CZ-wc3" kind="show" id="MjM-Vb-uj9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" fixedFrame="YES" text="Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mor-RE-ytl">
+                                <rect key="frame" x="10" y="10" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="sgq-tq-LJ4" secondAttribute="trailing" id="BUe-qI-kab"/>
+                            <constraint firstItem="Cyg-AR-QMK" firstAttribute="top" secondItem="sgq-tq-LJ4" secondAttribute="bottom" constant="8" symbolic="YES" id="QAE-AM-nkH"/>
+                            <constraint firstItem="sgq-tq-LJ4" firstAttribute="top" secondItem="hhZ-Zx-D8a" secondAttribute="bottom" constant="8" symbolic="YES" id="VUV-df-rzF"/>
+                            <constraint firstItem="sgq-tq-LJ4" firstAttribute="leading" secondItem="wp7-7G-14w" secondAttribute="leadingMargin" id="l7f-yc-IAF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bg-zo-rr0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="-752"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OL3-Uc-JjS">
+            <objects>
+                <viewController id="EJ9-6O-28f" customClass="ViewController" customModule="Project1_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TCn-Wv-erY"/>
+                        <viewControllerLayoutGuide type="bottom" id="VAx-Bs-ocF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3qF-eo-1ma">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2cq-x6-r4g">
+                                <rect key="frame" x="16" y="28" width="343" height="631"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Copy of c_cave-of-wonders" translatesAutoresizingMaskIntoConstraints="NO" id="Klt-oW-6Tl">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="284"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" text="Well done" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6m8-rh-iwI">
+                                        <rect key="frame" x="0.0" y="284" width="343" height="347"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" fixedFrame="YES" text="Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHZ-ad-62y">
+                                <rect key="frame" x="10" y="10" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VAx-Bs-ocF" firstAttribute="top" secondItem="2cq-x6-r4g" secondAttribute="bottom" constant="8" symbolic="YES" id="2cp-AK-V2t"/>
+                            <constraint firstItem="2cq-x6-r4g" firstAttribute="leading" secondItem="3qF-eo-1ma" secondAttribute="leadingMargin" id="Klh-8V-LwZ"/>
+                            <constraint firstItem="2cq-x6-r4g" firstAttribute="top" secondItem="TCn-Wv-erY" secondAttribute="bottom" constant="8" symbolic="YES" id="T8m-Xm-faK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2cq-x6-r4g" secondAttribute="trailing" id="UhO-aa-XiC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lum-Xh-chC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153" y="-752"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Copy of c_cave-of-wonders" width="550" height="284"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MjM-Vb-uj9"/>
+        <segue reference="T0Z-Vp-7XF"/>
+        <segue reference="5kR-PJ-mBK"/>
+    </inferredMetricsTieBreakers>
+</document>
